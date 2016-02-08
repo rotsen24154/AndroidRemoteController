@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppBaseTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Back"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/Back"
+        android:background="@drawable/file_stop_wmp"
+        android:onClick="pressStop"
+        android:minHeight="48dip"
+        android:minWidth="48dip" />
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Stop"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/Stop"
+        android:background="@drawable/file_play_wmp"
+        android:onClick="pressPlay"
+        android:minHeight="48dip"
+        android:minWidth="48dip" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Play"
+        android:layout_alignBottom="@+id/Play"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/Play"
+        android:onClick="pressPause"
+        android:background="@drawable/file_pause_wmp"
+        android:minHeight="48dip"
+        android:minWidth="48dip" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Play"
+        android:layout_alignBottom="@+id/Play"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/Pause"
+        android:onClick="pressNext"
+        android:background="@drawable/file_next_wmp"
+        android:minHeight="48dip"
+        android:minWidth="48dip" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="111dp"
+        android:onClick="pressBack"
+        android:background="@drawable/file_back_wmp"
+        android:minHeight="48dip"
+        android:minWidth="48dip" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Back"
+        android:layout_below="@+id/Back"
+        android:text="Anterior" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Stop"
+        android:layout_below="@+id/Stop"
+        android:layout_toRightOf="@+id/Back"
+        android:text="   Stop" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_toRightOf="@+id/Pause"
+        android:text="Siguiente" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/Play"
+        android:text=" Pausa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Play"
+        android:layout_below="@+id/Play"
+        android:text="   Play" />
+
+</RelativeLayout>

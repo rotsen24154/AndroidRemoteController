@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppBaseTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Start"
+        android:layout_alignBottom="@+id/Start"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/Start"
+        android:background="@drawable/file_stop"
+        android:minWidth="48dip"
+        android:onClick="pressStop" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Stop"
+        android:layout_alignBottom="@+id/Stop"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/Stop"
+        android:background="@drawable/file_back"
+        android:minWidth="48dip"
+        android:onClick="pressBack" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Next"
+        android:layout_alignBottom="@+id/Next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/file_play"
+        android:minWidth="48dip"
+        android:onClick="pressStart" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
+        android:layout_toRightOf="@+id/Start"
+        android:background="@drawable/file_next"
+        android:minWidth="48dip"
+        android:onClick="pressNext" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/Back"
+        android:text="Anterior" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/Stop"
+        android:text="Detener" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_toRightOf="@+id/Start"
+        android:text="Siguiente" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/Start"
+        android:text="Iniciar" />
+
+</RelativeLayout>
